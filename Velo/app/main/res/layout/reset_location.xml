@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/resetMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/reset_location">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="18sp"
+                    android:alpha="0.95"
+                    android:textAllCaps="false"
+                    android:text="@string/reset_button"/>
+
+            </LinearLayout>
+
+        </fragment>
+
+    </LinearLayout>
+
+</LinearLayout>
